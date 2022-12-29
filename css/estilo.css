@@ -359,3 +359,33 @@ footer#rodape p {
 .whats:hover {
 	opacity: 80%;
 }
+
+@media (max-width: 1480px) {
+  .whats {
+	right: 190px;
+   }
+}
+
+@media (max-width: 1400px) {
+  .whats {
+	right: 140px;
+   }
+}
+
+@media (max-width: 1380px) {
+  .whats {
+	right: 120px;
+   }
+}
+
+@media (max-width: 1300px) {
+  .whats {
+	right: 80px;
+   }
+}
+
+@media (max-width: 1240px) {
+  .whats {
+	right: 50px;
+   }
+}
