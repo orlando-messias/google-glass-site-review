@@ -3,7 +3,7 @@
 
 @font-face {
 	font-family: 'FonteLogo';
-	src: url(../_fonts/bubblegum-sans-regular.otf);
+	src: url(../fonts/bubblegum-sans-regular.otf);
 }
 
 body {
@@ -32,7 +32,7 @@ header#cabecalho img#icone {
 
 header#cabecalho {
 	height: 150px;
-	background: url(../_imagens/glass-logo-peq2.png) no-repeat 0px 70px;
+	background: url(../imagens/glass-logo-peq2.png) no-repeat 0px 70px;
 }
 
 header#cabecalho h1 {
