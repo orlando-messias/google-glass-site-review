@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Formulário</title>
+  <link rel="stylesheet" type="text/css" href="_css/estilo.css" />
+  <link rel="stylesheet" type="text/css" href="_css/form.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&&family=Rubik+Vinyl&display=swap"
+    rel="stylesheet">
+
+</head>
+<script language="javascript" src="_javascript/funcoes.js"></script>
+<script>
+  function calc_total() {
+    var qtd = parseInt(document.getElementById('cQtd').value);
+    tot = qtd * 1500;
+    document.getElementById('cTot').value = tot;
+  }
+</script>
+
+<body>
+  <div id="interface">
+    <script type="text/javascript">
+      const value = localStorage.getItem('background-color') ?? 'ffffff';
+      document.body.style.backgroundColor = `#${value}`;
+    </script>
+    <header id="cabecalho">
+
+      <img id="icone" src="_imagens/contato.png" />
+      <nav id="menu">
+        <h1>Menu Principal</h1>
+        <ul onmouseout="mudaFoto('contato')">
+          <li onmouseover="mudaFoto('glass-oculos-preto-peq2')"><a href="index.html">Home<a></li>
+          <li onmouseover="mudaFoto('especificacoes-02')"><a href="specs.html">Especificações</a></li>
+          <li onmouseover="mudaFoto('fotos')"><a href="fotos.html">Fotos</a></li>
+          <li onmouseover="mudaFoto('multimidia')"><a href="multimidia.html">Multimídia</a></li>
+          <li onmouseover="mudaFoto('contato')" class="active"><a href="fale-conosco.html">Fale conosco</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="corpo">
+      <article id="noticia-principal">
+        <div id="noticia-principal-title">
+          <h2>FORMULÁRIO DE CONTATO</h2>
+          <img src="_imagens/form-icon.png" style="margin-left: 25px;" />
+        </div>
+      </article>
+    </section>
+
+
+    <form>
+      <div style="display: flex; flex-direction: column; margin-top: 14px;">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" maxlength="100" placeholder="Seu nome completo" />
+      </div>
+      <div style="display: flex; flex-direction: column; margin-top: 14px;">
+        <label for="email">Email:</label>
+        <input type="text" id="email" maxlength="50" placeholder="Seu email" />
+      </div>
+      <div style="display: flex; align-items: center; width: 600px;">
+        <div style="display: flex; flex-direction: column; margin-top: 14px; width: 300px;">
+          <label for="cidade">Cidade:</label>
+          <input type="text" id="cidade" maxlength="50" placeholder="Cidade" />
+        </div>
+        <div style="display: flex; flex-direction: column; margin-top: 14px; width: 200px;">
+          <label for="estado">Estado:</label>
+          <select name="estado" class="select-estado">
+            <optgroup label="Região Sudeste">
+              <option value="RJ"> Rio de Janeiro </option>
+              <option value="SP"> São Paulo </option>
+              <option value="MG" selected> Minas Gerais </option>
+            </optgroup>
+            <optgroup label="Região Sul">
+              <option value="PR"> Paraná </option>
+              <option value="SC"> Santa Catarina </option>
+              <option value="RS"> Rio Grande do Sul </option>
+            </optgroup>
+          </select>
+        </div>
+      </div>
+      <div style="display: flex; flex-direction: column; margin-top: 14px;">
+        <label for="dataNasc">Data Nascimento:</label>
+        <input type="date" id="dataNasc" class="datepicker">
+      </div>
+      <div style="display: flex; margin-top: 14px; align-items: center;">
+        <input type="checkbox" id="solicitacao" checked>
+        <label for="solicitacao" style="margin-top: 5px; cursor: pointer;"> Gostaria de adquirir um Google Glass quando disponível </label>
+      </div>
+      <div style="display: flex; flex-direction: column; margin-top: 14px;">
+        <label for="msg">Mensagem:</label>
+        <textarea id="msg" cols="35" rows="5" placeholder="Deixe aqui sua mensagem"></textarea>
+      </div>
+      <div style="display: flex; flex-direction: column; margin-top: 14px;">
+        <button type="button" class="btn-send">Enviar</button>
+      </div>
+
+
+    </form>
+
+
+    <footer id="rodape">
+      <div class="rodape-images">
+        <img src="_imagens/footer_youtube.png">
+        <img src="_imagens/footer_instagram.png">
+        <img src="_imagens/footer_tiktok.png">
+        <img src="_imagens/footer_twitter.png">
+        <img src="_imagens/footer_facebook.png">
+        <img src="_imagens/footer_linkedin.png">
+        <img src="_imagens/footer_github.png">
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

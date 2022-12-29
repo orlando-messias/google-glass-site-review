@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Tudo sobre Google Glass</title>
+	<link rel="stylesheet" type="text/css" href="_css/estilo.css" />
+	<link rel="stylesheet" type="text/css" href="_css/specs.css" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&&family=Rubik+Vinyl&display=swap"
+		rel="stylesheet">
+</head>
+<script language="javascript" src="_javascript/funcoes.js"></script>
+
+<body id="general">
+	<script type="text/javascript">
+		const value = localStorage.getItem('background-color') ?? 'ffffff';
+		document.body.style.backgroundColor = `#${value}`;
+	</script>
+
+	<div id="interface">
+		<header id="cabecalho">
+
+			<img id="icone" src="_imagens/especificacoes-02.png" />
+			<nav id="menu">
+				<h1>Menu Principal</h1>
+				<ul onmouseout="mudaFoto('especificacoes-02')" id="myDIV">
+					<li onmouseover="mudaFoto('glass-oculos-preto-peq2')" class="item"><a href="index.html">Home<a></li>
+					<li onmouseover="mudaFoto('especificacoes-02')" class="item active"><a href="specs.html">Especificações</a>
+					</li>
+					<li onmouseover="mudaFoto('fotos')" class="item"><a href="fotos.html">Fotos</a></li>
+					<li onmouseover="mudaFoto('multimidia')" class="item"><a href="multimidia.html">Multimídia</a></li>
+					<li onmouseover="mudaFoto('contato')" class="item"><a href="fale-conosco.html">Fale conosco</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<section id="corpo">
+			<article id="noticia-principal">
+				<div id="noticia-principal-title">
+					<h2>RAIO-X GOOGLE GLASS</h2>
+					<img src="_imagens/settings-icon.png" style="margin-left: 25px;" />
+				</div>
+				<div style="margin-bottom: 50px;">
+					<div>
+						<p>
+							Aqui você encontrará mais informações sobre os recursos do
+							Google Glass. Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações.
+
+						<section id="conteudo">
+							<img src="_imagens/glass-esquema-marcado.jpg" usemap="#meumapa"
+								style="border-radius: 8px; border: 5px solid #222222; box-shadow: 0 0 2px 4px white;" />
+							<map name="meumapa">
+								<area shape="rect" coords="179,202,270,260" href="google-glass.html#tela"
+									target="janela" />
+								<area shape="circle" coords="158,243,10.5" href="google-glass.html#camera"
+									target="janela" />
+								<area shape="circle" coords="73,52,12" href="google-glass.html#gadgets"
+									target="janela" />
+								<area shape="poly" coords="28,143,83,216,84,249,27,169"
+									href="google-glass.html#sensores" target="janela" />
+
+							</map>
+							<iframe src="google-glass.html" name="janela" id="frame-spec"></iframe>
+						</section>
+						</p>
+					</div>
+				</div>
+
+				<footer id="rodape">
+					<div class="rodape-images">
+						<img src="_imagens/footer_youtube.png">
+						<img src="_imagens/footer_instagram.png">
+						<img src="_imagens/footer_tiktok.png">
+						<img src="_imagens/footer_twitter.png">
+						<img src="_imagens/footer_facebook.png">
+						<img src="_imagens/footer_linkedin.png">
+						<img src="_imagens/footer_github.png">
+					</div>
+				</footer>
+	</div>
+
+	<script>
+		var btns = document.getElementsByClassName("item");
+		for (var i = 0; i < btns.length; i++) {
+			btns[i].addEventListener("click", function () {
+				var current = document.getElementsByClassName("active");
+				current[0].className = current[0].className.replace(" active", "");
+				this.className += " active";
+			});
+		}
+	</script>
+</body>
+
+</html>
