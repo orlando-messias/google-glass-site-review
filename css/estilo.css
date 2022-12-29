@@ -12,7 +12,7 @@ body {
 }
 
 div#interface {
-	width: 1200px;
+	width: 1100px;
 	background-color: #222222;
 	margin: -10px auto;
 	box-shadow: 0px 0px 10px #00000080;
@@ -91,7 +91,9 @@ nav#menu ul {
 	text-transform: uppercase;
 	position: absolute;
 	top: 5px;
-	left: 460px;
+	left: 560px;
+	font-size: 15px;
+	font-weight: 900;
 }
 
 nav#menu li {
@@ -183,7 +185,7 @@ section#corpo .especificacoes-tecnicas{
 	background-color: white;
 	height: 430px;
 	color: black;
-	width: 1241px;
+	width: 1141px;
 	margin: 50px 0 90px -30px;
 }
 
@@ -193,7 +195,7 @@ section#corpo .especificacoes-tecnicas .info{
 }
 
 section#corpo .img-glass-tela{
-	width: 1240px;
+	width: 1140px;
 	margin-left: -30px;
 	position: relative;
 	z-index: 2;
@@ -227,7 +229,7 @@ article#noticia-principal h2 {
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
-	width: 1126px;
+	width: 1026px;
 	border-bottom: 3px solid #88ff00;
 	margin: 50px 0 35px 20px;
 }
@@ -318,7 +320,7 @@ aside#lateral h2 {
 }
 
 footer#rodape {
-	width: 1200px;
+	width: 1100px;
 	border-top: 1px solid #606060;
 	margin: 30px 0 40px 0;
 	display: flex;
@@ -349,7 +351,7 @@ footer#rodape p {
 .whats {
 	position: fixed;
 	bottom: 50px;
-	right: 167px;
+	right: 217px;
 	cursor: pointer;
 	z-index: 1000;
 }
