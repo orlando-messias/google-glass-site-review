@@ -196,7 +196,7 @@ section#corpo .img-glass-tela{
 	width: 1240px;
 	margin-left: -30px;
 	position: relative;
-	z-index: 1;
+	z-index: 2;
 }
 
 section#corpo .img-glass-tela img{
@@ -351,6 +351,7 @@ footer#rodape p {
 	bottom: 50px;
 	right: 167px;
 	cursor: pointer;
+	z-index: 1000;
 }
 
 .whats:hover {
