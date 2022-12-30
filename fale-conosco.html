@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Formulário</title>
+  <title>GGlas - Formulário</title>
+  <link rel="icon" type="image/x-icon" href="./imagens/favicon.ico">
   <link rel="stylesheet" type="text/css" href="./css/estilo.css" />
   <link rel="stylesheet" type="text/css" href="./css/form.css">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -48,9 +49,14 @@
           <h2>FORMULÁRIO DE CONTATO</h2>
           <img src="./imagens/form-icon.png" style="margin-left: 25px;" />
         </div>
+
+        <div>
+          <p>Preencha o formulário com seus dados básicos e receba mais informações!
+          </p>
+        </div>
+
       </article>
     </section>
-
 
     <form>
       <div style="display: flex; flex-direction: column; margin-top: 14px;">
@@ -68,11 +74,12 @@
         </div>
         <div style="display: flex; flex-direction: column; margin-top: 14px; width: 200px;">
           <label for="estado">Estado:</label>
-          <select name="estado" class="select-estado">
+          <select name="estado" class="select-estado" required>
+            <option value="" hidden>Selecione</option>
             <optgroup label="Região Sudeste">
               <option value="RJ"> Rio de Janeiro </option>
               <option value="SP"> São Paulo </option>
-              <option value="MG" selected> Minas Gerais </option>
+              <option value="MG"> Minas Gerais </option>
             </optgroup>
             <optgroup label="Região Sul">
               <option value="PR"> Paraná </option>

@@ -191,7 +191,7 @@ section#corpo .especificacoes-tecnicas{
 	align-items: flex-start;
 	background-color: white;
 	justify-content: center;
-	height: 430px;
+	height: 390px;
 	color: black;
 	width: 1141px;
 	margin: 50px 0 90px -30px;
@@ -207,7 +207,7 @@ section#corpo .especificacoes-tecnicas .info {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	margin-top: 50px;
+	margin-top: 55px;
 }
 
 section#corpo .especificacoes-tecnicas .info .info-title{

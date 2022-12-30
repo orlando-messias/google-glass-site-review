@@ -1,18 +1,18 @@
 @charset "UTF-8";
 
 form {
-	width: 1010px;
+	width: 1056px;
 	font-family: 'Roboto', sans-serif;
 	background-color: #f0f0f0;
 	padding: 20px 42px 50px;
-	margin: 40px auto;
+	margin: 40px 0 70px -20px;
 	border: none;
-	border-radius: 5px;
 }
 
 label {
 	padding-bottom: 6px;
 	font-size: 14px;
+	padding-left: 5px;
 }
 
 input[type=text] {
@@ -24,6 +24,10 @@ input[type=text] {
 	padding: 3px 10px;
 	outline: none;
 	font-family: 'Roboto', sans-serif;
+}
+
+::placeholder {
+	color: #b9b9b9;
 }
 
 input[type=date] {
@@ -42,7 +46,8 @@ input[type=date] {
 	margin-right: 10px;
 }
 
-input:focus, .select-estado:focus {
+input:focus,
+.select-estado:focus {
 	border: 1px solid #0d6dc0;
 }
 
@@ -57,11 +62,15 @@ input:focus, .select-estado:focus {
 	cursor: pointer;
 }
 
+select:invalid {
+	color: #8f8f8f;
+}
+
 textarea {
 	font-size: 14px;
 	width: 90%;
 	border-radius: 3px;
-	border: 1px solid gray;
+	border: 1px solid #f0f0f0;
 	padding: 10px;
 	outline: none;
 	font-family: 'Roboto', sans-serif;
