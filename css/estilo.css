@@ -72,9 +72,15 @@ figure.foto-legenda figcaption {
 	color: white;
 	width: 100%;
 	height: 100%;
-	padding: 10px;
+	padding: 5px;
 	box-sizing: border-box;
 	transition: opacity 1s;
+	cursor: pointer;
+}
+
+figure.foto-legenda figcaption h3 {
+	font-size: 44px;
+	margin: 10px 5px;
 }
 
 figure.foto-legenda:hover figcaption {
@@ -152,6 +158,7 @@ section#corpo video {
 
 section#corpo .video-title {
 	padding: 50px 30px 0 20px;
+	font-weight: 600;
 }
 
 section#corpo .container {
@@ -181,16 +188,32 @@ section#corpo .btn:hover{
 
 section#corpo .especificacoes-tecnicas{
 	display: flex;
-	align-items: center;
+	align-items: flex-start;
 	background-color: white;
+	justify-content: center;
 	height: 430px;
 	color: black;
 	width: 1141px;
 	margin: 50px 0 90px -30px;
 }
 
-section#corpo .especificacoes-tecnicas .info{
+section#corpo .especificacoes-tecnicas p {
+	padding: 0px 18px;
+}
+
+section#corpo .especificacoes-tecnicas .info {
 	width: 25%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 50px;
+}
+
+section#corpo .especificacoes-tecnicas .info .info-title{
+	height: 40px;
+	margin-top: 10px;
+	padding: 0;
 	text-align: center;
 }
 

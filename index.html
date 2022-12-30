@@ -4,7 +4,8 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Google Glass</title>
+	<title>GGlass</title>
+	<link rel="icon" type="image/x-icon" href="./imagens/favicon.ico">
 	<link rel="stylesheet" type="text/css" href="./css/estilo.css" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,7 +15,7 @@
 </head>
 <script language="javascript" src="./javascript/funcoes.js"></script>
 
-<body id="general">
+<body id="container">
 	<script type="text/javascript">
 		const value = localStorage.getItem('background-color') ?? 'ffffff';
 		document.body.style.backgroundColor = `#${value}`;
@@ -51,31 +52,21 @@
 				<div>
 					<div>
 						<p>
-							O <span style="font-weight: 900;">Google Glass</span> é um acessório em forma de
-							óculos que possibilita a interação dos usuários com diversos conteúdos em realidade
-							aumentada.
-							Também chamado de <a href=" http://www.google.com.br" target="_blank">PROJECT GLASS</a>, o
-							eletrônico é
-							capaz de tirar fotos a partir de comandos de voz, enviar mensagens instantâneas e
-							realizar
-							vídeo&shy;con&shy;ferên&shy;cias. Seu lançamento está previsto para 2014, e seu preço
-							deve ser de
-							US$ 1,5 mil. Atualmente o <em>Google Glass</em> encontra-se em fase de testes e já
-							possui um vídeo
-							totalmente gravado com o dispositivo. Além disso, a companhia de buscas registrou novas
-							patentes
-							anti-furto e de desbloqueio de tela para o acessório.
+							O <strong>Google Glass</strong> é um acessório em formato de óculos que permite a interação dos usuários
+							com diversos conteúdos em realidade aumentada. Também chamado de <strong>PROJECT GLASS</strong>,  possibilita que se faça 
+							diversas tarefas rapidamente, ou mesmo com um comando de voz. Por exemplo, é possível tirar fotos, enviar mensagens,
+							fazer videoconferências, etc. Lançado em 2014, seu preço hoje está em torno de R$ 500,00 por ser um modelo bastante
+							exclusivo. Seu propósito inicial era de substituir os smartphones e computadores, atendendo as necessidades das pessoas
+							de maneira prática, como responder e-mails, interagir, acessar a internet, etc.
 						</p>
 					</div>
 					<div class="container">
 						<div class="texto">
 							<p>De simples no aparelho, vemos apenas o design básico com lentes e armação semelhantes à
-								óculos de grau comuns.
-								O software do dispositivo, por outro lado, ganhou uma notável melhoria: é equipado com o
-								processador Snapdragon
-								XR1 da Qualcomm, projetado para realidade aumentada (RA) e virtual.
-								O Google diz que, com o poder do XR1, os novos óculos podem incorporar “visão
-								computacional e capacidades avançadas de aprendizado de máquina”.
+								óculos de grau comuns. O software do dispositivo, por outro lado, ganhou uma notável melhoria: é equipado com o
+								processador Snapdragon XR1 da Qualcomm, projetado para realidade aumentada (RA) e virtual. O Google diz que,
+								com o poder do XR1, os novos óculos podem incorporar <span style="color: #88ff00">“visão computacional e capacidades avançadas de
+								aprendizado de máquina”</span>. Isto é fantástico!
 							</p>
 							<div class="btn">
 								SAIBA MAIS
@@ -101,37 +92,27 @@
 				<div class="especificacoes-tecnicas">
 					<div class="info">
 						<img src="./imagens/resolution_icon.png">
-						<p>
-							<strong>Resolução equiv. a tela de 25"</strong>
-						</p>
-						<p>
-							Localizada no canto superior direito do olho direito, acompanha um alto falante.
-						</p>
+						<p class="info-title"><strong>Resolução equivalente a tela de 25"</strong></p>
+						<p>Localizada no canto superior direito do olho direito, acompanha um alto falante.</p>
 					</div>
 					<div class="info">
 						<img src="./imagens/camera_icon.png">
-						<p>
-							<strong>720p para Vídeos</strong>
-						</p>
+						<p class="info-title"><strong>720p para Vídeos</strong></p>
 						<p>Ganhou um LED frontal que acende quando uma gravação de vídeo está sendo feita</p>
 					</div>
 					<div class="info">
 						<img src="./imagens/connect_icon.png">
-						<p>
-							<strong>Wi-Fi e Bluetooth</strong>
-						</p>
+						<p class="info-title"><strong>Wi-Fi e Bluetooth</strong></p>
 						<p>Conecte-se diretamente em seu Wi-Fi ou celular Android ou IOS de maneira prática</p>
 					</div>
 					<div class="info">
 						<img src="./imagens/memory_icon.png">
-						<p>
-							<strong>12GB</strong>
-						</p>
+						<p class="info-title"><strong>12GB</strong></p>
 						<p>12 GB de memória utilizável sincronizada com armazenamento na nuvem</p>
 					</div>
 				</div>
 
-				<h2>TELAS LCD | AMOLED</h2>
+				<h2>- TELAS LCD | AMOLED</h2>
 				<p>O vídeo de divulgação do Google mostra que você pode se transformar em uma espécie de “super-<wbr/>humano”,
 					já que o aparelho pode indicar a quantos metros você está de seu destino, se o metrô está aberto ou fechado, mostrar o clima, agenda e até mesmo permitir que você marque encontros apenas com comandos de voz.
 
@@ -149,7 +130,7 @@
 
 				<br /><br /><br /><br />
 
-				<h2>ENTREGANDO TUDO NO ÁUDIO</h2>
+				<h2>- ENTREGANDO TUDO NO ÁUDIO</h2>
 				<div>
 					<p>A gigante das buscas usará um sistema de áudio baseado na transdução por condução. Através
 						das hastes dos óculos, o som será transmitido para o ouvido do usuário por meio de
